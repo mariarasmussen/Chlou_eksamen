@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book tid || Chlou</title>
+    <link href="../mystyle.css" rel="stylesheet">
+    <link href="../css/book.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap" rel="stylesheet">
+    <meta name="description" content="Har du husket at booke tid? Ellers så skynd dig ind her og find præcis den behandling der passer dig.">
+
+</head>
+
+<body>
+    <!--Header-->
+    <header class="navigation__container">
+        <a href="../index.html" rel="hjem" class="hjem_link">
+            <img src="../images/logo.png" class="logo" alt="logo">
+
+        </a>
+        <nav>
+            <!-- The mobile menu icon -->
+            <label for="mobileicon" class="mobileiconlabel">&#9776;</label>
+            <input type="checkbox" id="mobileicon" class="mobileicon">
+
+            <!-- Menu items -->
+            <div class="menuitems__container">
+                <a href="../index.html" class="menuitem">Forside</a>
+                <a href="priser.html" class="menuitem">Priser</a>
+                <a href="om.html" class="menuitem">Om Os</a>
+                <a href="webshop.html" class="menuitem">Webshop</a>
+                <a href="book.html" class="menuitem cta_style">Book tid</a>
+            </div>
+        </nav>
+    </header>
+
+    <!--book section-->
+
+    <section class="banner">
+        <h2>BOOK DIN TID</h2>
+        <div class="card_container">
+            <div class="card_img">
+                <!--kort billede-->
+            </div>
+
+            <div class="card_content">
+                <h3>Tidsbestilling</h3>
+                <form>
+                    <div class="form_row">
+                        <select name="month">
+                            <option value="month-select">Måned</option>
+                            <option value="januar">Januar</option>
+                            <option value="februar">Februar</option>
+                            <option value="marts">Marts</option>
+                            <option value="april">April</option>
+                            <option value="maj">Maj</option>
+                            <option value="juni">Juni</option>
+                            <option value="juli">Juli</option>
+                            <option value="august">August</option>
+                            <option value="september">September</option>
+                            <option value="oktober">Oktober</option>
+                            <option value="november">November</option>
+                            <option value="december">December</option>
+                        </select>
+
+                        <select name="days">
+                            <option value="day-select">Dag</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value="21">21</option>
+                            <option value="22">22</option>
+                            <option value="23">23</option>
+                            <option value="24">24</option>
+                            <option value="25">25</option>
+                            <option value="26">26</option>
+                            <option value="27">27</option>
+                            <option value="28">28</option>
+                            <option value="29">29</option>
+                            <option value="30">30</option>
+                            <option value="31">31</option>
+
+                        </select>
+
+                        <select name="hour">
+                            <option value="hour-select">Tidspunkt</option>
+                            <option value="0900">09 : 00</option>
+                            <option value="1000">10 : 00</option>
+                            <option value="1100">11 : 00</option>
+                            <option value="1200">12 : 00</option>
+                            <option value="1300">13 : 00</option>
+                            <option value="1400">14 : 00</option>
+                            <option value="1500">15 : 00</option>
+                            <option value="1600">16 : 00</option>
+                            <option value="1700">17 : 00</option>
+                        </select>
+                    </div>
+
+                    <div class="form_row">
+                        <select name="behandling">
+                            <option value="be-select">Behandling</option>
+                            <option value="klipp">Dame</option>
+                            <option value="farve">Mand</option>
+                            <option value="fogk">Børn</option>
+                            <option value="elev">Farve</option>
+                            <option value="permanent">Permanent</option>
+                            <option value="opsætning">Vipper/bryn/voks</option>
+                            <option value="vipper">Andre behandlinger</option>
+                        </select>
+
+                        <select name="frisør">
+                            <option value="frisør-select">Vælg frisør</option>
+                            <option value="christina">Christina</option>
+                            <option value="henriette">Henriette</option>
+                            <option value="julie">Julie</option>
+                            <option value="line">Line</option>
+                        </select>
+                    </div>
+
+                    <div class="form_row">
+                        <input type="text" placeholder="Fulde navn">
+                        <input type="text" placeholder="Mobilnummer">
+                    </div>
+
+                    <!--Book knap-->
+                    <div class="form_row">
+                        <div class="but">
+                            <a href="book.html" rel="knap_link" class="knap_link knap" id="knappen">BOOK TID</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <p>Telefon: 86 42 41 00 </p> <br>
+                    <p>Addresse: </p>
+                    <address>Kastanievej 15B, <br>8930 Randers</address>
+                    <a href=" email"></a>
+                </div>
+                <div class="footer-col-2">
+                    <img src="../images/logo.png" class="logo_footer" alt="logo">
+                    <p>Vi sætter en dyd i, at skræddersy et look som passer til dig.</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Hurtige links</h3>
+                        <a href="../index.html" rel="hjem" class="footer_link">Hjem
+                        </a><br>
+                        <a href="om.html" rel="Om Os" class="footer_link">Om os
+                        </a><br>
+                        <a href="priser.html" rel="Priser" class="footer_link">Priser
+                        </a><br>
+                        <a href="webshop.html" class="footer_link">Webshop
+                        </a><br>
+                        <a href="book.html" rel="book" class="footer_link">Book
+                        </a>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Følg os</h3>
+                        <a href="https://www.facebook.com/Chlou-209333515906187" rel="hjem" class="footer_link">Facebook
+                        </a><br>
+                        <a href="https://www.instagram.com/chlou_frisor/" rel="hjem" class="footer_link">Instagram
+                        </a><br>
+                        <a href="../index.html" rel="hjem" class="footer_link">TikTok
+                        </a><br>
+                        <a href="https://chlou.dk/" rel="hjem" class="footer_link">Chlou.dk
+                        </a>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2020 - easy tutorials</p>
+        </div>
+    </div>
+
+</body>
+
+</html>

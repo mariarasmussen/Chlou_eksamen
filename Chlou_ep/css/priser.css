@@ -1,0 +1,843 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box
+}
+
+/* styling på body */
+html,
+body {
+    width: 100%;
+    height: 100%;
+    cursor: default;
+    background: white;
+    background: linear-gradient(to right, white 0%, white 50%, white 100%);
+}
+
+/* PC prisliste fjernet på mobil */
+.pc {
+    display: none;
+}
+
+/* Styling på mobil prisliste */
+.grå_box {
+    background: #323434;
+    width: 90%;
+    margin-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+}
+
+.pris_header {
+    color: #f3f3f3;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 3.2rem;
+}
+
+.pris_mobil_kort {
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.priskort {
+    width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+}
+
+/* Styling på book knap mobil */
+.book_mob {
+    background: #f3f3f3;
+    width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 50px 0;
+    margin-bottom: 30px;
+}
+
+.book_link_mob {
+    text-decoration: none;
+    color: #323434;
+    text-align: center;
+}
+
+/* Styling til pc */
+@media only screen and (min-width:1100px) {
+
+    /* mobil prisliste fjernet på pc */
+    .mobile {
+        display: none;
+    }
+
+    /* styling af pc prisliste */
+    .pc {
+        display: block;
+        margin-bottom: -120px;
+    }
+
+    .page1 {
+        position: relative;
+        width: 900px;
+        height: 800px;
+        margin: 0 auto;
+        margin-top: 10px
+    }
+
+    .saks {
+        position: absolute;
+        top: 150px;
+        left: 0px;
+        transform: rotate(45deg);
+        transition: 0.8s ease-out all;
+        height: 700px;
+    }
+
+    .saks-active {
+        left: -250px;
+        transform: rotate(0deg)
+    }
+
+    .body-wrap {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background-color: #323434;
+        color: #f3f3f3;
+        transition: 0.6s ease-out all;
+        box-shadow: 0px 50px 100px rgba(0, 0, 0, 0.5)
+    }
+
+    .page1-title {
+        width: 100%;
+        z-index: 99;
+        position: absolute;
+        top: 0;
+        left: 20px;
+        font-size: 160px;
+        text-align: center;
+        font-weight: 700;
+        letter-spacing: 20px;
+        transition: 0.6s ease-out all;
+        color: #f3f3f3;
+    }
+
+    .page1-title-active {
+        font-size: 180px;
+        text-shadow: 0px 50px 100px rgba(0, 0, 0, 0.4)
+    }
+
+    .page1-desc {
+        z-index: 98;
+        position: absolute;
+        top: 220px;
+        width: 85%;
+        left: 235px;
+        padding: 50px;
+        padding-left: 110px;
+        padding-top: 150px;
+        transition: 0.6s ease-out all;
+        color: #323434;
+    }
+
+    .page1-desc-active {
+        left: 215px;
+        top: 250px;
+        padding-left: 120px;
+        background: #f3f3f3;
+        box-shadow: 0px 50px 100px rgba(0, 0, 0, 0.4)
+    }
+
+    .page1-desc hr {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 280px;
+        opacity: 0.5
+    }
+
+    .page1-desc p {
+        width: 460px;
+        line-height: 30px;
+        opacity: 0.8;
+        text-align: center;
+        font-size: 1.9rem;
+    }
+
+    .page2 {
+        position: relative;
+        width: 900px;
+        height: 800px;
+        margin: 0 auto
+    }
+
+    .pg2-middle-wrap {
+        position: absolute;
+        top: 50%;
+        margin-top: -250px;
+        left: 0;
+        width: 100%;
+        height: 500px
+    }
+
+    .pg2-white-desc {
+        position: absolute;
+        width: 60%;
+        top: 0%;
+        left: 0%;
+        background: #F3F3F3;
+        color: #2D3A4B;
+        transition: 1s ease-out all;
+        text-align: center;
+    }
+
+    .flex_kort {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .pg2-white-desc-active {
+        top: -10%;
+        left: -20%;
+        box-shadow: 0px 50px 100px rgba(0, 0, 0, 0.4)
+    }
+
+    .pg2-white-desc h3 {
+        opacity: 0.8;
+        color: #323434;
+        margin: 60px;
+        font-size: 2rem
+    }
+
+    .pg2-white-desc h2 {
+        font-weight: 700;
+        font-size: 4rem;
+        letter-spacing: 10px;
+        opacity: 0.8;
+        color: #323434;
+    }
+
+    .pg2-white-desc p {
+        width: 60%;
+        font-size: 1.4rem;
+        opacity: 0.8;
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-bottom: 50px;
+        line-height: 30px;
+        color: #323434;
+        text-align: start;
+        padding-left: 100px;
+    }
+
+    .pg2-photo-wrap {
+        position: absolute;
+        width: 70%;
+        height: 100%;
+        top: -20%;
+        right: 0;
+        background: #333;
+        overflow: hidden;
+        transition: 0.6s ease-out all
+    }
+
+    .pg2-photo-wrap-active {
+        right: -10%;
+        box-shadow: 0px 50px 100px rgba(0, 0, 0, 0.4)
+    }
+
+    .pg2-photo {
+        position: absolute;
+        left: 0;
+        width: 120%;
+        height: 100%;
+        background-image: url("../images/img/dame.jpg");
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        transition: 4s ease-out all
+    }
+
+    .pg2-photo-active {
+        left: -20%
+    }
+
+    .page3 {
+        position: relative;
+        width: 900px;
+        height: 800px;
+        margin: 0 auto
+    }
+
+    .pg3-middle-wrap {
+        position: absolute;
+        top: 50%;
+        margin-top: -250px;
+        left: 0;
+        width: 100%;
+        height: 500px
+    }
+
+    .pg3-white-desc {
+        position: absolute;
+        width: 60%;
+        bottom: 0;
+        left: 0;
+        background: #F3F3F3;
+        color: #2D3A4B;
+        text-align: center;
+        transition: 0.4s ease-out all
+    }
+
+    .pg3-white-desc-active {
+        bottom: -10%;
+        left: -10%;
+        box-shadow: 0px 50px 100px rgba(0, 0, 0, 0.4)
+    }
+
+    .pg3-white-desc h3 {
+        color: #323434;
+        opacity: 0.8;
+        margin: 60px;
+        font-size: 2rem
+    }
+
+    .pg3-white-desc h2 {
+        font-weight: 700;
+        font-size: 4rem;
+        letter-spacing: 10px;
+        opacity: 0.8;
+        color: #323434;
+    }
+
+    .pg3-white-desc p {
+        width: 60%;
+        font-size: 1.4rem;
+        opacity: 0.8;
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-bottom: 50px;
+        line-height: 30px;
+        color: #323434;
+        text-align: start;
+        padding-left: 100px;
+    }
+
+    .pg3-photo-wrap {
+        position: absolute;
+        width: 100%;
+        height: 105%;
+        bottom: 0;
+        right: 0;
+        background: #333;
+        overflow: hidden;
+        transition: 1s ease-out all
+    }
+
+    .pg3-photo-wrap-active {
+        width: 100%;
+        right: -20%;
+        box-shadow: 0px 50px 100px rgba(0, 0, 0, 0.4)
+    }
+
+    .pg3-photo {
+        position: absolute;
+        left: -20%;
+        width: 120%;
+        height: 100%;
+        background-image: url("../images/img/mand.jpg");
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        transition: 4s ease-out all
+    }
+
+    .pg3-photo-active {
+        left: 0
+    }
+
+    .page4 {
+        position: relative;
+        width: 900px;
+        height: 800px;
+        margin: 0 auto
+    }
+
+    .pg4-middle-wrap {
+        position: absolute;
+        top: 50%;
+        margin-top: -250px;
+        left: 0;
+        width: 100%;
+        height: 500px
+    }
+
+    .pg4-white-desc {
+        position: absolute;
+        width: 60%;
+        top: 0;
+        left: 0;
+        background: #F3F3F3;
+        color: #2D3A4B;
+        text-align: center;
+        transition: 1s ease-out all
+    }
+
+    .pg4-white-desc-active {
+        width: 60%;
+        top: -10%;
+        left: -20%;
+        box-shadow: 0px 50px 100px rgba(0, 0, 0, 0.4)
+    }
+
+    .pg4-white-desc h3 {
+        color: #323434;
+        opacity: 0.8;
+        margin: 60px;
+        font-size: 2rem;
+    }
+
+    .pg4-white-desc h2 {
+        font-weight: 700;
+        font-size: 4rem;
+        letter-spacing: 10px;
+        opacity: 0.8;
+        color: #323434;
+    }
+
+    .pg4-white-desc p {
+        width: 60%;
+        font-size: 1.4rem;
+        opacity: 0.8;
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-bottom: 50px;
+        line-height: 30px;
+        color: #323434;
+        text-align: start;
+        padding-left: 100px;
+    }
+
+    .pg4-photo-wrap {
+        position: absolute;
+        width: 70%;
+        height: 120%;
+        top: -20%;
+        right: 0;
+        background: #333;
+        overflow: hidden;
+        transition: 1s ease-out all
+    }
+
+    .pg4-photo-wrap-active {
+        right: -10%;
+        box-shadow: 0px 50px 100px rgba(0, 0, 0, 0.4)
+    }
+
+    .pg4-photo {
+        position: absolute;
+        left: 0;
+        width: 120%;
+        height: 100%;
+        background-image: url("../images/img/børn.jpg");
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        transition: 4s ease-out all
+    }
+
+    .pg4-photo-active {
+        left: -20%
+    }
+
+    .page6 {
+        position: relative;
+        width: 900px;
+        height: 800px;
+        margin: 0 auto
+    }
+
+    .pg6-middle-wrap {
+        position: absolute;
+        top: 50%;
+        margin-top: -250px;
+        left: 0;
+        width: 100%;
+        height: 500px;
+    }
+
+    .pg6-white-desc {
+        position: absolute;
+        width: 60%;
+        top: 0%;
+        left: 0%;
+        background: #f3f3f3;
+        color: #2D3A4B;
+        text-align: center;
+        transition: 1s ease-out all;
+    }
+
+    .pg6-white-desc-active {
+        top: -10%;
+        left: -20%;
+        box-shadow: 0px 50px 100px rgba(0, 0, 0, 0.4)
+    }
+
+    .pg6-white-desc h2 {
+        font-weight: 700;
+        font-size: 4rem;
+        letter-spacing: 10px;
+        opacity: 0.8;
+        color: #323434;
+        margin-top: 30px;
+    }
+
+    .pg6-white-desc p {
+        width: 60%;
+        font-size: 1.3rem;
+        opacity: 0.8;
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-bottom: 50px;
+        line-height: 30px;
+        color: #323434;
+        text-align: start;
+        padding-left: 100px;
+    }
+
+    .pg6-photo-wrap {
+        position: absolute;
+        width: 70%;
+        height: 100%;
+        top: -20%;
+        right: 0;
+        background: #333;
+        overflow: hidden;
+        transition: 0.6s ease-out all
+    }
+
+    .pg6-photo-wrap-active {
+        right: -10%;
+        box-shadow: 0px 50px 100px rgba(0, 0, 0, 0.4)
+    }
+
+    .pg6-photo {
+        position: absolute;
+        left: 0;
+        width: 120%;
+        height: 100%;
+        background-image: url("../images/img/farve.jpg");
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        transition: 4s ease-out all
+    }
+
+    .pg6-photo-active {
+        left: -20%
+    }
+
+    .page7 {
+        position: relative;
+        width: 900px;
+        height: 800px;
+        margin: 0 auto;
+    }
+
+    .pg7-middle-wrap {
+        position: absolute;
+        top: 50%;
+        margin-top: -250px;
+        left: 0;
+        width: 100%;
+        height: 500px
+    }
+
+    .pg7-white-desc {
+        position: relative;
+        width: 60%;
+        top: 60px;
+        bottom: 0;
+        left: 20px;
+        background: #f3f3f3;
+        color: #2D3A4B;
+        text-align: center;
+        transition: 0.4s ease-out all;
+        padding-top: 25px;
+        padding-bottom: 15px;
+    }
+
+    .pg7-white-desc-active {
+        top: 20%;
+        left: -10%;
+        box-shadow: 0px 50px 100px rgba(0, 0, 0, 0.4)
+    }
+
+    .pg7-white-desc h3 {
+        color: #323434;
+        opacity: 0.8;
+        margin: 60px;
+        font-size: 2rem
+    }
+
+    .pg7-white-desc h2 {
+        font-weight: 700;
+        font-size: 4rem;
+        letter-spacing: 10px;
+        opacity: 0.8;
+        color: #323434;
+    }
+
+    .pg7-white-desc p {
+        width: 60%;
+        font-size: 1.2rem;
+        opacity: 0.8;
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-bottom: 50px;
+        line-height: 30px;
+        color: #323434;
+        text-align: start;
+        padding-left: 100px;
+    }
+
+    .pg7-photo-wrap {
+        position: absolute;
+        width: 70%;
+        height: 80%;
+        top: 0%;
+        right: 0;
+        background: #333;
+        overflow: hidden;
+        transition: 1s ease-out all
+    }
+
+    .pg7-photo-wrap-active {
+        right: -20%;
+        box-shadow: 0px 50px 100px rgba(0, 0, 0, 0.4)
+    }
+
+    .pg7-photo {
+        position: absolute;
+        left: 0;
+        width: 120%;
+        height: 100%;
+        background-image: url("../images/img/permanent.jpg");
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        transition: 4s ease-out all
+    }
+
+    .pg7-photo-active {
+        left: 0
+    }
+
+    .page8 {
+        position: relative;
+        width: 900px;
+        height: 800px;
+        margin: 0 auto
+    }
+
+    .pg8-middle-wrap {
+        position: absolute;
+        top: 50%;
+        margin-top: -250px;
+        left: 0;
+        width: 100%;
+        height: 500px
+    }
+
+    .pg8-white-desc {
+        position: absolute;
+        width: 60%;
+        top: 0%;
+        left: 0%;
+        background: #F3F3F3;
+        color: #2D3A4B;
+        text-align: center;
+        transition: 1s ease-out all
+    }
+
+    .pg8-white-desc-active {
+        top: -10%;
+        left: -20%;
+        box-shadow: 0px 50px 100px rgba(0, 0, 0, 0.4)
+    }
+
+    .pg8-white-desc h2 {
+        font-weight: 700;
+        font-size: 2.8rem;
+        letter-spacing: 10px;
+        opacity: 0.8;
+        color: #323434;
+    }
+
+    .pg8-white-desc p {
+        width: 60%;
+        font-size: 1.4rem;
+        opacity: 0.8;
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-bottom: 50px;
+        line-height: 30px;
+        color: #323434;
+        text-align: start;
+        padding-left: 100px;
+    }
+
+    .pg8-photo-wrap {
+        position: absolute;
+        width: 70%;
+        height: 100%;
+        top: -20%;
+        right: 0;
+        background: #333;
+        overflow: hidden;
+        transition: 0.6s ease-out all
+    }
+
+    .pg8-photo-wrap-active {
+        right: -10%;
+        box-shadow: 0px 50px 100px rgba(0, 0, 0, 0.4)
+    }
+
+    .pg8-photo {
+        position: absolute;
+        left: 0;
+        width: 120%;
+        height: 100%;
+        background-image: url("../images/img/bryn.jpg");
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        transition: 4s ease-out all
+    }
+
+    .pg8-photo-active {
+        left: -20%
+    }
+
+    .page9 {
+        position: relative;
+        width: 900px;
+        height: 800px;
+        margin: 0 auto
+    }
+
+    .pg9-middle-wrap {
+        position: absolute;
+        top: 50%;
+        margin-top: -250px;
+        left: 0;
+        width: 100%;
+        height: 500px
+    }
+
+    .pg9-white-desc {
+        position: absolute;
+        width: 60%;
+        top: 0;
+        left: 0;
+        background: #F3F3F3;
+        color: #2D3A4B;
+        text-align: center;
+        transition: 1s ease-out all
+    }
+
+    .pg9-white-desc-active {
+        width: 60%;
+        top: -10%;
+        left: -20%;
+        box-shadow: 0px 50px 100px rgba(0, 0, 0, 0.4)
+    }
+
+    .pg9-white-desc h2 {
+        font-weight: 700;
+        font-size: 4rem;
+        letter-spacing: 10px;
+        opacity: 0.8;
+        color: #323434;
+    }
+
+    .pg9-white-desc p {
+        width: 60%;
+        font-size: 1.4rem;
+        opacity: 0.8;
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-bottom: 50px;
+        line-height: 30px;
+        color: #323434;
+        text-align: start;
+        padding-left: 100px;
+    }
+
+    .pg9-photo-wrap {
+        position: absolute;
+        width: 70%;
+        height: 120%;
+        top: -20%;
+        right: 0;
+        background: #333;
+        overflow: hidden;
+        transition: 1s ease-out all
+    }
+
+    .pg9-photo-wrap-active {
+        right: -10%;
+        box-shadow: 0px 50px 100px rgba(0, 0, 0, 0.4)
+    }
+
+    .pg9-photo {
+        position: absolute;
+        left: 0;
+        width: 120%;
+        height: 100%;
+        background-image: url("../images/img/andre.jpg");
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        transition: 4s ease-out all
+    }
+
+    .pg9-photo-active {
+        left: -20%
+    }
+
+    /* styling af book knap på pc */
+    .page5 {
+        position: relative;
+        width: 900px;
+        height: 300px;
+        margin-bottom: 200px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .book_link {
+        text-decoration: none;
+    }
+
+    .page5 h3 {
+        position: absolute;
+        font-weight: 700;
+        font-size: 2rem;
+        letter-spacing: 10px;
+        padding: 100px;
+        background: #f3f3f3;
+        box-shadow: 0px 50px 100px rgba(0, 0, 0, 0.4);
+        width: 100%;
+        text-align: center;
+        color: #323434;
+    }
+}

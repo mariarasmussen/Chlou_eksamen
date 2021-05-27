@@ -1,0 +1,121 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/* styling af baggrund */
+.banner {
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/banner.jpg) center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #f3f3f3;
+    padding-bottom: 20px;
+}
+
+/* styling til book sektionen */
+.card_container {
+    display: grid;
+    grid-template-columns: 420px 420px;
+
+}
+
+.card_img {
+    background: url(../images/billede1.jpg) center/cover no-repeat;
+}
+
+.banner h2 {
+    padding-bottom: 40px;
+    margin-bottom: 5px;
+    font-size: 1.8rem;
+    margin-top: 30px;
+}
+
+.card_content {
+    background: #f3f3f3;
+    height: 330px;
+}
+
+.card_content h3 {
+    text-align: center;
+    color: #323434;
+    padding: 25px 0 10px 0;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.form_row {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+
+form select,
+form input {
+    display: block;
+    width: 100%;
+    margin: 15px 12px;
+    padding: 5px;
+    font-size: 15px;
+    outline: none;
+    border: 1px solid #e2d7ce;
+    border-bottom: 1px solid #f3f3f3;
+    font-weight: 300;
+    color: #323434;
+}
+
+.but {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.knap_link {
+    text-decoration: none;
+    color: #323434;
+}
+
+.knap {
+    background: #e2d7ce;
+    padding: 10px 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #323434;
+    font-size: 1rem;
+    border-radius: 4px;
+    box-shadow: 2px 2px 2px gray;
+}
+
+.knap:hover {
+    opacity: 0.9;
+}
+
+/* styling til under 900px */
+@media(max-width:900px) {
+    .card_container {
+        grid-template-columns: 100%;
+    }
+
+    .card_img {
+        height: 330px;
+    }
+}
+
+/* styling til over 900px */
+@media only screen and (min-width: 900px) {
+    .banner h2 {
+        margin-bottom: 40px;
+    }
+}

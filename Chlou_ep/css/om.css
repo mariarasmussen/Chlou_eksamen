@@ -1,0 +1,292 @@
+/* info grid container fjernet på mobil */
+.grid-container_info {
+    display: none;
+}
+
+
+.om_div {
+    background-color: white;
+    color: #323434;
+}
+
+.bilbil {
+    width: 90%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20px;
+}
+
+.header_info {
+    color: #323434;
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 30px;
+    margin-bottom: 30px;
+}
+
+.info_info {
+    color: #323434;
+    text-align: center;
+    font-size: 1.1rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    line-height: 1.6;
+    width: 90%;
+}
+
+.header_om_os {
+    padding: 20px;
+    text-align: center;
+}
+
+.om_section {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+/* Mød vores frisører */
+.video_om {
+    width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    border: 1px solid black;
+    box-shadow: 10px 5px 5px gray;
+}
+
+.hvid {
+    background-color: #323434;
+    width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    padding: 15px;
+    color: #e3d7ce;
+    box-shadow: 10px 5px 5px gray;
+}
+
+/*Book  tid*/
+
+.book_knap {
+    background-color: #e2d7ce;
+    padding: 20px;
+    box-shadow: 10px 5px 5px gray;
+    border: 1px solid #323434;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.3rem;
+    color: #323434;
+    opacity: 0.8;
+    margin-bottom: 40px;
+    margin-top: 10px;
+    width: 150px;
+    text-align: center;
+}
+
+.book_link {
+    text-decoration: none;
+}
+
+.grid-container {
+    display: none;
+}
+
+/*Åbningstider */
+.aabning_section {
+    background-color: #e2d7ce;
+    padding: 20px 20px 40px 20px;
+}
+
+.aabning_header {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+.aabning_tekst {
+    margin-top: 20px;
+    text-align: center;
+    line-height: 1.5;
+}
+
+/*Maps */
+.maps {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+    background-color: #323434;
+}
+
+.finder {
+    color: #f3f3f3;
+    padding-bottom: 40px;
+    font-size: 2rem;
+}
+
+/* styling til 900px og op */
+@media only screen and (min-width:900px) {
+    body {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    .mobil_info {
+        display: none;
+    }
+
+    .grid-container_info {
+        display: grid;
+        width: 100%;
+        border: 1px solid #323434;
+        margin-top: 20px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        gap: 0px 0px;
+        grid-template-areas:
+            "billede_info tekst_info";
+    }
+
+    .billede_info {
+        grid-area: billede_info;
+    }
+
+    .tekst_info {
+        grid-area: tekst_info;
+        margin-right: 20px;
+        padding-top: 20px;
+    }
+
+    .header_om_os {
+        font-size: 3rem;
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    .om_section {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 80px;
+    }
+
+    .flex {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .video_om {
+        width: 370px;
+
+    }
+
+    .hvid {
+        width: 370px;
+    }
+
+    .book_knap {
+        width: 300px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        border-radius: 2%;
+        margin-top: 80px;
+        margin-bottom: 80px;
+        font-size: 2rem;
+    }
+
+    .aab_map {
+        display: none;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        gap: 0px 0px;
+        grid-template-areas:
+            "aab map";
+
+    }
+
+    .aab {
+        grid-area: aab;
+        height: 700px;
+    }
+
+    .map {
+        grid-area: map;
+    }
+
+    .aab_section {
+        background-color: #e3d7ce;
+        padding-bottom: 160px;
+    }
+
+    .aabning_header {
+        padding-top: 70px;
+        font-size: 2rem;
+    }
+
+    .aabning_tekst {
+        margin-top: 100px;
+        font-size: 1.5rem;
+    }
+
+    .finder {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .maps {
+        padding-bottom: 50px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    .footer {
+        margin-top: 0px;
+
+    }
+}
+
+/* styling til 1100px */
+@media only screen and (min-width: 1100px) {
+    .video_om {
+        width: 500px;
+        height: 720px;
+    }
+
+    .hvid {
+        width: 500px;
+        font-size: 1.1rem;
+    }
+
+    .maps {
+        padding-bottom: 70px;
+    }
+
+    .map {
+        padding-bottom: 70px;
+    }
+}
+
+/* styling til mindre devices */
+@media only screen and (min-width: 600px) {
+    .finder {
+        padding-top: 30px;
+        padding-bottom: 20px;
+    }
+
+    .maps {
+        padding-bottom: 50px;
+    }
+}

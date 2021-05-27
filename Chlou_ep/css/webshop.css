@@ -1,0 +1,41 @@
+/* kode til både mobil og pc */
+
+body {
+    background: white;
+}
+
+/* kode til motion graphic */
+.motion {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 40px;
+}
+
+.motiongraphic {
+    width: 100%;
+}
+
+/* kode til teaservideo og header */
+.t_head {
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-size: 4rem;
+    text-shadow: 10px 5px 5px gray;
+}
+
+.teaser {
+    height: 600px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 10px 5px 5px gray;
+    margin-bottom: 50px;
+}
+
+@media only screen and (min-width:900px) {
+    .motion {
+        margin-left: 70px;
+        margin-right: 70px;
+    }
+}
